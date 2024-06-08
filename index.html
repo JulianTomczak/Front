@@ -1,0 +1,22 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Wine Cellar Monitor</title>
+  <link rel="stylesheet" href="styles.css">
+  <script src="https://cdn.jsdelivr.net/npm/chart.js"></script>
+</head>
+<body>
+  <div class="container">
+    <h1>Conservación y refrigeración del vino en bodegas</h1>
+    <div id="menu">
+      <button onclick="fetchCurrent()">Temperatura y Humedad Actuales</button>
+      <button onclick="fetchHistory()">Ver Historial de Temperaturas</button>
+      <button onclick="customizeValues()">Personalizar Valores</button>
+    </div>
+    <div id="data-container"></div>
+  </div>
+  <script src="app.js"></script>
+</body>
+</html>
